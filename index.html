@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Tip_calculation_form</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="tip__body">
+			<div class="tip__amount amount-tip">
+				<div class="tip__label">Tip Amount</div>
+				<div class="tip__dollar"><sup>$</sup>4.02</div>
+			</div>
+			<div class="tip__total total-tip">
+				<div class="tip__label">Total Per Person</div>
+				<div class="tip__dollar"><sup>$</sup>12.02</div>
+			</div>
+			<div class="tip__input-fields input-fields">
+				<div class="input-fields__amount">
+					<div class="fields fields-border">
+						<input type="text" name="amount" value="102.02" maxlength="7">
+						<div class="fields__label">Bill Amount</div>
+					</div>
+				</div>
+				<div class="input-fields__number-of-people">
+					<div class="fields"> 
+						<input type="text" name="number-of-people" value="5" maxlength="2">
+						<div class="fields__label">Number of People</div>
+					</div>
+				</div>
+			</div>
+			<div class="tip__percentages percentages">
+				<div class="percentages__item">
+					<input type="radio" name="tip" value="5%" id="five-percent">
+					<label for="five-percent">5%</label>
+				</div>
+				<div class="percentages__item">
+					<input type="radio" name="tip" value="5%" id="ten-percent">
+					<label for="ten-percent">10%</label>
+				</div>
+				<div class="percentages__item">
+					<input type="radio" name="tip" value="15%" id="fifteen-percent">
+					<label for="fifteen-percent">15%</label>
+				</div>
+				<div class="percentages__item">
+					<input type="radio" name="tip" value="20%" id="twenty-percent">
+					<label for="twenty-percent">20%</label>
+				</div>
+			</div>
+			<div class="tip__button">
+				<button>Calculate</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/style.js"></script>
+</body>
+
+</html>
